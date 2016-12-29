@@ -71,8 +71,8 @@ html
 				block content
 
 		#footer: .container
-			p 	#{brand} #{appversion} 
-				| Powered by <a href="http://keystonejs.com" target="_blank">KeystoneJS</a> version #{version}.
+			p(class="poweredby") #{brand} #{appversion}
+				| Powered by <a href="http://www.cell-ed.com" target="_blank">Cell-<span>Ed</span></a> version #{version}.
 				if User && user
 					|  Signed in as 
 					a(href='/keystone/' + User.path + '/' + user.id)= User.getDocumentName(user)
