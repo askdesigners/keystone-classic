@@ -13,7 +13,7 @@
 @import "bootstrap/variables.less";
 
 // reset variables here
-@brand-primary:         #348dd9;
+@brand-primary:         #3072be;
 @body-bg:               #fafafa;
 @gutter-width:          30px;
 
@@ -103,7 +103,9 @@ body {
 	color: @gray-light;
 	font-size: .85em;
 	text-align: center;
-	
+  	line-height: 20px;
+  	height: 20px;
+  
 	a {
 		color: darken(@gray-light, 15%);
 		
@@ -240,32 +242,37 @@ body {
 }
 
 .auth-box-col .btn-primary {
-	background-image: -webkit-gradient(linear, left 0, left 100%, from(#9bd6c9), to(#7db4a7));
-	background-image: -webkit-linear-gradient(top, #9bd6c9, 0, #7db4a7, 100%);
-	background-image: -moz-linear-gradient(top, #9bd6c9 0, #7db4a7 100%);
-	background-image: linear-gradient(to bottom, #9bd6c9 0, #7db4a7 100%);
+	background-image: -webkit-gradient(linear, left 0, left 100%, from(#3072be), to(#3072be));
+	background-image: -webkit-linear-gradient(top, #3072be, 0, #3072be, 100%);
+	background-image: -moz-linear-gradient(top, #3072be 0, #3072be 100%);
+	background-image: linear-gradient(to bottom, #3072be 0, #3072be 100%);
 	background-repeat: repeat-x;
 	//filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#9bd6c9', endColorstr='#9bd6c9', GradientType=0);
 	float: right;
 }
 
 .auth-box-col .btn-primary:hover {
-	background-image: -webkit-gradient(linear, left 0, left 100%, from(#7db4a7), to(#9bd6c9));
-	background-image: -webkit-linear-gradient(top, #7db4a7, 0, #9bd6c9, 100%);
-	background-image: -moz-linear-gradient(top, #7db4a7 0, #9bd6c9 100%);
-	background-image: linear-gradient(to bottom, #7db4a7 0, #9bd6c9 100%);
+	background-image: -webkit-gradient(linear, left 0, left 100%, from(#3072be), to(#3072be));
+	background-image: -webkit-linear-gradient(top, #3072be, 0, #3072be, 100%);
+	background-image: -moz-linear-gradient(top, #3072be 0, #3072be 100%);
+	background-image: linear-gradient(to bottom, #3072be 0, #3072be 100%);
 	background-repeat: repeat-x;
 	//filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#9bd6c9', endColorstr='#9bd6c9', GradientType=0);
 }
 
 .auth-box-col .btn-primary {
-	background-color: #9bd6c9;
-	border-color: #9bd6c9;
+	background-color: #3072be;
+	border-color: #3072be;
+  	-webkit-border-radius: 0;
+  	-moz-border-radius: 0;
+  	border-radius: 0;
+	width: 100px;
+	height: 48px;
 }
 
 .auth-box-col .btn-primary:hover {
-	background-color: #9bd6c9;
-	border-color: #9bd6c9;
+	background-color: #3072be;
+	border-color: #3072be;
 }
 
 @media (min-width:768px) {
