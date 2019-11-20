@@ -1,7 +1,7 @@
 var _ = require('underscore');
 var async = require('async');
 var keystone = require('../../');
-var jade = require('jade');
+var jade = require('pug');
 
 exports = module.exports = function(req, res) {
 
