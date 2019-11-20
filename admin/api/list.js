@@ -183,8 +183,8 @@ exports = module.exports = function(req, res) {
 					req.list.getPages(req.query.items, req.list.pagination.maxPages);
 
 					locals = { list: req.list, columns: columns, item: items[0], csrf_query: req.query.csrf_query, _:_ };
-					row = jade.renderFile(__dirname + '/../../templates/partials/row.jade', locals);
-					pagination = jade.renderFile(__dirname + '/../../templates/partials/pagination.jade', { items: req.query.items, link_to: link_to });
+					row = jade.renderFile(__dirname + '/../../templates/partials/row.pug', locals);
+					pagination = jade.renderFile(__dirname + '/../../templates/partials/pagination.pug', { items: req.query.items, link_to: link_to });
 
 					return sendResponse({
 						item: items[0],
