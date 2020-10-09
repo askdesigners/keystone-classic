@@ -29,6 +29,7 @@
     "codemirror": "^5.7.0",
     "compression": "^1.6.0",
     "connect-flash": "^0.1.1",
+    "connect-mongo": "^3.2.0",
     "cookie-parser": "^1.4.0",
     "debug": "^2.2.0",
     "embedly": "^1.0.4",

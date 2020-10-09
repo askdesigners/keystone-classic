@@ -4,6 +4,12 @@ var async = require('async');
 
 exports = module.exports = function(req, res) {
 
+	const showInAdminUI = _.property(['options', 'schema', 'showInAdminUI'])(req.list);
+	const isSuperAdmin = _.property('isSuperAdmin')(req.user);
+	if (!showInAdminUI || !isSuperAdmin) {
+		return res.redirect('/');
+	}
+
 	var itemQuery = req.list.model.findById(req.params.item).select();
 
 	itemQuery.exec(function(err, item) {

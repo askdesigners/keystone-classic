@@ -55,6 +55,12 @@ exports = module.exports = function(req, res) {
 
 	var renderView = function() {
 
+		const showInAdminUI = _.property(['options', 'schema', 'showInAdminUI'])(req.list);
+		const isSuperAdmin = _.property('isSuperAdmin')(req.user);
+		if (!showInAdminUI || !isSuperAdmin) {
+			return res.redirect('/');
+		}
+
 		var query = req.list.paginate({ filters: queryFilters, page: req.params.page, perPage: req.list.get('perPage') }).sort(sort.by);
 
 		req.list.selectColumns(query, columns);
